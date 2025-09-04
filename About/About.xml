@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Minigun2</name>
+  <packageId>Techmago.Minigun2</packageId>
+  <author>Techmago</author>
+  <url>https://github.com/techmago/rimworld-minigun2</url>
+  <supportedVersions>
+    <li>1.2</li>
+    <li>1.3</li>
+    <li>1.4</li>
+    <li>1.5</li>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>
+    A rework of the minigun.
+    Most of the people think that the minigun is almost useless.
+    It has a shitty accuracy and take WAY too much time to fire.
+
+    This mod simple change the behavior of the minigun.
+
+    Some math:
+
+    Consider the following:
+
+    The normal minigun takes 2.5 of aiming time (which in a combat scenario, often keep resetting because someone else shoot
+    down the target, and the pawn need to pick someone else)
+    Then it takes 2.08 seconds to shoot al its 25 bullets
+    And finally, it takes 2.3 seconds of cooldown before the pawn could start all over again.
+
+    This give us, a total time of 6.88 second per cycle.
+
+    Since the accuracy is so low, some people say the “only good way” to use a minigun is to shoot a wall behind a bunch of targets, so the randomness will cause a lot of hits. Otherwise, you may not even shoot in a quick battle.
+
+    But then, what this mod does?
+    My goal is not to make the minigun op. Just an interesting option.
+
+    I removed the burst count of the weapon and changed the warm up and cooldown to 0,14.
+    So your pawn will take 0,14 to aim, (about 0) to shoot and then, 0,14 of cooldown.
+    With these numbers, you will fire, in the same 6.88 seconds, about 24.57 bullets. (which is less!)
+
+    I didn't change the shitty accuracy, or damage or anything else... just removed the time the paws would spend trying to shoot and replaced with the paw actually firing the damn thing.
+
+    Spray and pray my friends.
+  </description>
+</ModMetaData>

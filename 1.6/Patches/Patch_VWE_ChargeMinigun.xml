@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Charge Minigun -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "VWE_Gun_ChargeMinigun"]/verbs</xpath>
+					<value>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>VWE_Bullet_ChargeMinigun</defaultProjectile>
+								<warmupTime>0.12</warmupTime>
+								<minRange>1.5</minRange>
+								<range>31.9</range>
+								<soundCast>VWE_Shot_ChargeMinigun</soundCast>
+								<soundCastTail>GunTail_Medium</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+							</li>
+						</verbs>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "VWE_Gun_ChargeMinigun"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Mass>12</Mass>
+							<AccuracyTouch>0.20</AccuracyTouch>
+							<AccuracyShort>0.30</AccuracyShort>
+							<AccuracyMedium>0.30</AccuracyMedium>
+							<AccuracyLong>0.18</AccuracyLong>
+							<RangedWeapon_Cooldown>0.11</RangedWeapon_Cooldown>
+						</statBases>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
