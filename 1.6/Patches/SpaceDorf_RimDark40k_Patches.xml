@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+      <mods>
+         <li>RimDark 40k - Mankinds Finest</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+          <operations>
+
+
+						
+<!-- Chainswords  -->
+<li Class="PatchOperationReplace">
+	<xpath>/Defs/ThingDef[defName = "BEWH_AstartesChainsword"]/tools</xpath>
+	<value>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>chain</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>0.2</cooldownTime>
+        <armorPenetration>0.65</armorPenetration>
+      </li>
+    </tools>
+	</value>
+</li>
+
+<li Class="PatchOperationReplace">
+	<xpath>/Defs/ThingDef[defName = "BEWH_proto-Chainsword"]/tools</xpath>
+	<value>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>chain</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>0.3</cooldownTime>
+        <armorPenetration>0.55</armorPenetration>
+      </li>
+    </tools>
+	</value>
+</li>
+
+
+
+						
+		  </operations>
+	  </match>
+</Operation>
+
+</Patch>
+
+
+
+

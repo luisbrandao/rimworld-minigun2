@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+      <mods>
+         <li>Grimworld 40,000 - Angels of Death</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+          <operations>
+
+
+						
+<!-- Terminator Assault Cannon -->
+<li Class="PatchOperationReplace">
+	<xpath>/Defs/ThingDef[defName = "GW_SM_Gun_AssualtCannon"]/verbs</xpath>
+	<value>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>GW_SM_Term_CannonBullet</defaultProjectile>
+        <warmupTime>0.10</warmupTime>
+        <minRange>1.5</minRange>
+        <range>55</range>
+  
+        <soundCast>HP_Bolt_Gun_Sound</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+	</value>
+</li>
+
+<li Class="PatchOperationReplace">
+	<xpath>/Defs/ThingDef[defName = "GW_SM_Gun_AssualtCannon"]/statBases</xpath>
+	<value>
+    <statBases>
+			<Mass>12</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.73</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
+			<RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
+    </statBases>
+	</value>
+</li>
+
+
+<!-- HeavyBolter -->
+<li Class="PatchOperationReplace">
+	<xpath>/Defs/ThingDef[defName = "HeavyBolter"]/verbs</xpath>
+	<value>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HP_Bullet_HeavyBolter</defaultProjectile>
+        <warmupTime>0.13</warmupTime>
+        <minRange>1.5</minRange>
+        <range>40</range>
+  
+        <soundCast>HP_Heavy_Bolt_Gun_Sound</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+      </li>
+    </verbs>
+	</value>
+</li>
+
+<li Class="PatchOperationReplace">
+	<xpath>/Defs/ThingDef[defName = "HeavyBolter"]/statBases</xpath>
+	<value>
+    <statBases>
+      <Mass>8</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
+    </statBases>
+	</value>
+</li>
+
+
+
+
+
+
+						
+		  </operations>
+	  </match>
+</Operation>
+
+
+
+
+
+
+</Patch>
+
+
+
+
