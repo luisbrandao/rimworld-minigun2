@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+      <mods>
+         <li>Rimsenal - Core</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+          <operations>
+
+
+						
+<!-- Smart MiniGun -->
+<li Class="PatchOperationReplace">
+	<xpath>/Defs/ThingDef[defName = "Gun_SmartMinigun"]/verbs</xpath>
+	<value>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Minigun</defaultProjectile>
+        <warmupTime>0.10</warmupTime>
+        <minRange>1.5</minRange>
+        <range>32.9</range>
+  
+        <soundCast>Shot_Minigun</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	</value>
+</li>
+
+<li Class="PatchOperationReplace">
+	<xpath>/Defs/ThingDef[defName = "Gun_SmartMinigun"]/statBases</xpath>
+	<value>
+    <statBases>
+      <Mass>10</Mass>
+      <AccuracyTouch>0.20</AccuracyTouch>
+      <AccuracyShort>0.25</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.18</AccuracyLong>
+      <RangedWeapon_Cooldown>0.10</RangedWeapon_Cooldown>
+    </statBases>
+	</value>
+</li>
+
+
+
+
+						
+		  </operations>
+	  </match>
+</Operation>
+
+</Patch>
+
+
+
+

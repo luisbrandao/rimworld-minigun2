@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+      <mods>
+         <li>Vanilla Spacer weapons - Explosive Bolt</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+          <operations>
+
+<!-- Bolter Rifle -->
+<li Class="PatchOperationReplace">
+	<xpath>/Defs/ThingDef[defName = "VSWEB_Gun_ExplosiveBoltRifle"]/verbs</xpath>
+	<value>
+    <verbs>
+      <li>
+        <verbClass>ExplosiveBolt.ExplosiveBolt_Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>VSWEB_Bullet_ExplosiveBoltRifle_SmallCan</defaultProjectile>
+        <warmupTime>1.8</warmupTime>
+        <range>26.9</range>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>VSWEB_ExplosiveBoltShot_Light</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	</value>
+</li>
+
+<li Class="PatchOperationReplace">
+	<xpath>/Defs/ThingDef[defName = "VSWEB_Gun_ExplosiveBoltRifle"]/statBases</xpath>
+	<value>
+    <statBases>
+      <Mass>7.6</Mass>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+      <RangedWeapon_Cooldown>1.30</RangedWeapon_Cooldown>
+    </statBases>
+	</value>
+</li>
+						
+<!-- Bolter MiniGun -->
+<li Class="PatchOperationReplace">
+	<xpath>/Defs/ThingDef[defName = "VSWEB_Gun_ExplosiveBoltMinigun"]/verbs</xpath>
+	<value>
+    <verbs>
+      <li>
+        <verbClass>ExplosiveBolt.ExplosiveBolt_Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>VSWEB_Bullet_ExplosiveBoltminigun_SmallCan</defaultProjectile>
+        <warmupTime>0.15</warmupTime>
+        <minRange>1.5</minRange>
+        <range>31.9</range>
+  
+        <soundCast>VSWEB_ExplosiveBoltShot_Heavy</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	</value>
+</li>
+
+<li Class="PatchOperationReplace">
+	<xpath>/Defs/ThingDef[defName = "VSWEB_Gun_ExplosiveBoltMinigun"]/statBases</xpath>
+	<value>
+    <statBases>
+      <Mass>12</Mass>
+      <AccuracyTouch>0.5</AccuracyTouch>
+      <AccuracyShort>0.4</AccuracyShort>
+      <AccuracyMedium>0.5</AccuracyMedium>
+      <AccuracyLong>0.13</AccuracyLong>
+      <RangedWeapon_Cooldown>0.13</RangedWeapon_Cooldown>
+    </statBases>
+	</value>
+</li>
+
+
+
+
+
+<!-- Bolter HeavyMiniGun -->
+						
+						<li Class="PatchOperationReplace">
+	<xpath>/Defs/ThingDef[defName = "VSWEB_Gun_FlackStormCannon"]/verbs</xpath>
+	<value>
+    <verbs>
+      <li>
+        <verbClass>ExplosiveBolt.ExplosiveBolt_Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>VSWEB_Bullet_ExplosiveBoltHeavy_LargeCan</defaultProjectile>
+        <warmupTime>0.12</warmupTime>
+        <minRange>3.5</minRange>
+        <range>36.9</range>
+  
+        <soundCast>VSWEB_ExplosiveBoltShot_Heavy</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	</value>
+</li>
+
+<li Class="PatchOperationReplace">
+	<xpath>/Defs/ThingDef[defName = "VSWEB_Gun_FlackStormCannon"]/statBases</xpath>
+	<value>
+    <statBases>
+      <Mass>18</Mass>
+      <AccuracyTouch>0.5</AccuracyTouch>
+      <AccuracyShort>0.35</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.2</AccuracyLong>
+      <RangedWeapon_Cooldown>0.11</RangedWeapon_Cooldown>
+    </statBases>
+	</value>
+</li>
+
+						
+		  </operations>
+	  </match>
+</Operation>
+
+</Patch>
